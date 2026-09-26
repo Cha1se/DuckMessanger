@@ -1,8 +1,8 @@
 package com.cha1se.duckmessenger.ui.naviagtion
 
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
-import androidx.navigation.NavController
-import androidx.navigation.NavHost
+import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -15,6 +15,7 @@ fun NavigationScreen(
     navController: NavHostController = rememberNavController()
 ) {
     NavHost(
+        modifier = Modifier.fillMaxSize(),
         navController = navController,
         startDestination = Route.ChatList.route,
     ) {

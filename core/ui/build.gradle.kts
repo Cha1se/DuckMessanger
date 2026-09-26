@@ -1,30 +1,18 @@
 plugins {
-    alias(libs.plugins.android.application)
+    alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.compose)
 }
 
 android {
-    namespace = "com.cha1se.duckmessenger"
+    namespace = "com.cha1se.ui"
     compileSdk {
         version = release(37)
     }
 
     defaultConfig {
-        applicationId = "com.cha1se.duckmessenger"
         minSdk = 24
-        targetSdk = 36
-        versionCode = 1
-        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-    }
-
-    buildTypes {
-        release {
-            optimization {
-                enable = false
-            }
-        }
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -33,15 +21,10 @@ android {
     buildFeatures {
         compose = true
     }
+
 }
 
 dependencies {
-    implementation(project(":core:network"))
-    implementation(project(":core:storage"))
-    implementation(project(":core:ui"))
-    implementation(project(":feature:chat"))
-    implementation(project(":feature:chat-list"))
-
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.compose.material3)

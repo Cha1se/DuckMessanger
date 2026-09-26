@@ -1,6 +1,7 @@
-package com.cha1se.duckmessenger.ui.theme
+package com.cha1se.ui.theme
 
 import androidx.compose.ui.graphics.Color
+
 
 val BGColor = Color(0xFF262626)
 val BGLightColor = Color(0xFF333333)
