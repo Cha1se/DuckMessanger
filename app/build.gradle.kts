@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.cha1se.duckmessanger"
+    namespace = "com.cha1se.duckmessenger"
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -12,7 +12,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.cha1se.duckmessanger"
+        applicationId = "com.cha1se.duckmessenger"
         minSdk = 24
         targetSdk = 36
         versionCode = 1

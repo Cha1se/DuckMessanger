@@ -24,4 +24,9 @@ dependencyResolutionManagement {
 
 rootProject.name = "DuckMessanger"
 include(":app")
- 
+include(":core")
+include(":core:storage")
+include(":core:network")
+include(":feature:chat")
+include(":feature:chat-list")
+include(":feature:profile")
